@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestTask</string>
+    <string name="menu_settings">Settings</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="choose_ringtone">Choose Rington</string>
+    <string name="share_by_email">Share By Email</string>
+    <string name="ava_name">Avatar Name</string>
+</resources>
