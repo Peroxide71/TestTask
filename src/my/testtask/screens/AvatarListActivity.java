@@ -49,6 +49,10 @@ public class AvatarListActivity extends Activity implements OnItemClickListener 
 			});
 			t.start();
 			
+		} else {
+			AvatarsAdapter adapter = new AvatarsAdapter(this);
+			avatars.setAdapter(adapter);
+			avatars.setOnItemClickListener(AvatarListActivity.this);
 		}
 		h = new Handler() {
 		      public void handleMessage(android.os.Message msg) {
@@ -58,9 +62,7 @@ public class AvatarListActivity extends Activity implements OnItemClickListener 
 		  		return;
 		      }
 		};
-		AvatarsAdapter adapter = new AvatarsAdapter(this);
-		avatars.setAdapter(adapter);
-		avatars.setOnItemClickListener(AvatarListActivity.this);
+		
 	}
 	
 	private void getAvatars() {
